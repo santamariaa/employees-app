@@ -1,5 +1,7 @@
 <h1> Employee List </h1>
 
+<%= link_to "Add new employee", "/employees/new" %> 
+
 <% @employees.each do |employee| %>
     <h2><a href="/employees/<%= employee.id %>"><%=employee.full_name %></a></h2>
     <h2><%=employee.last_name %></h2>
