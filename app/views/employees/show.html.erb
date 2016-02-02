@@ -7,7 +7,7 @@
 <h2><%=@employee.salary %></h2>
 <h2><%=@employee.phone_number %></h2>
 <h2><%=@employee.gender %></h2>
-
+<h5>last updated on: <%= @employee.friendly_updated_at %></h5>
 
 <%= link_to "Home", "/" %>
 <%= link_to "Edit", "/employees/#{@employee.id}/edit" %>
